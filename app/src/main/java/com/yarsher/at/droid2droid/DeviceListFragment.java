@@ -51,7 +51,7 @@ public class DeviceListFragment extends ListFragment implements WifiP2pManager.P
     }
 
     private static String getDeviceStatus(int deviceStatus) {
-        Log.d(WiFiDirectActivity.TAG, "Peer status :" + deviceStatus);
+        Log.d(MainActivity.TAG, "Peer status :" + deviceStatus);
         switch (deviceStatus) {
             case WifiP2pDevice.AVAILABLE:
                 return "Available";
@@ -144,7 +144,7 @@ public class DeviceListFragment extends ListFragment implements WifiP2pManager.P
         peers.addAll(peerList.getDeviceList());
         ((WiFiPeerListAdapter) getListAdapter()).notifyDataSetChanged();
         if (peers.size() == 0) {
-            Log.d(WiFiDirectActivity.TAG, "No devices found");
+            Log.d(MainActivity.TAG, "No devices found");
             return;
         }
 
