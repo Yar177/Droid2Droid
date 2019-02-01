@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="tablet_list_width" tools:ignore="MissingDefaultResource">300dp</dimen>
+    <dimen name="phone_list_height">200dp</dimen>
+
+</resources>
